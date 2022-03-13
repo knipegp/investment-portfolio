@@ -1,0 +1,9 @@
+---
+price_history:
+  period: 5y
+  interval: 1d
+ticker_symbols:
+  - AAPL
+  - SPOT
+  - NVDA
+  - DIS
