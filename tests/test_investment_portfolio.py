@@ -1,5 +1,8 @@
-from investment_portfolio import __version__
+def test_session_singleton():
+    from investment_portfolio import CachedRateLimitedSession
 
+    session_1 = CachedRateLimitedSession()
+    from investment_portfolio import CachedRateLimitedSession
 
-def test_version():
-    assert __version__ == '0.1.0'
+    session_2 = CachedRateLimitedSession()
+    assert session_1.core is session_2.core
